@@ -14,115 +14,115 @@
     </a>
 </li>
 <li class="mb-2">
-<a href="{{ route('loan.view', ['scheme' => 'Sonduru-Piyasa', 'view' => 'main']) }}" class="flex items-center">
+    <a href="{{ route('loan.view', ['scheme' => 'Sonduru-Piyasa', 'view' => 'main']) }}" class="flex items-center">
         <i class="fas fa-home mr-2"></i>
         <span>Sonduru Piyasa</span>
     </a>
 </li>
 <li class="mb-2">
-    <a href="{{ route('view.show', 'Govi-Navoda') }}" class="flex items-center">
+    <a href="{{ route('loan.view', ['scheme' => 'Govi-Navoda', 'view' => 'main']) }}" class="flex items-center">
         <i class="fas fa-leaf mr-2"></i>
         <span>Govi Navoda</span>
     </a>
 </li>
 <li class="mb-2">
-    <a href="{{ route('view.show', 'Riya-Shakthi') }}" class="flex items-center">
+    <a href="{{ route('loan.view', ['scheme' => 'Riya-Shakthi', 'view' => 'main']) }}" class="flex items-center">
         <i class="fas fa-truck mr-2"></i>
         <span>Riya Shakthi</span>
     </a>
 </li>
 <li class="mb-2">
-    <a href="{{ route('view.show', 'Ran-Aswenna') }}" class="flex items-center">
+    <a href="{{ route('loan.view', ['scheme' => 'Ran-Aswenna', 'view' => 'main']) }}" class="flex items-center">
         <i class="fas fa-seedling mr-2"></i>
         <span>Ran Aswenna</span>
     </a>
 </li>
 <li class="mb-2">
-    <a href="{{ route('view.show', 'Jaya-Isura') }}" class="flex items-center">
+    <a href="{{ route('loan.view', ['scheme' => 'Jaya-Isura', 'view' => 'main']) }}" class="flex items-center">
         <i class="fas fa-globe mr-2"></i>
         <span>Jaya Isura</span>
     </a>
 </li>
 <li class="mb-2">
-    <a href="{{ route('view.show', 'Rivi-Bala-Savi') }}" class="flex items-center">
+    <a href="{{ route('loan.view', ['scheme' => 'Rivi-Bala-Savi', 'view' => 'main']) }}" class="flex items-center">
         <i class="fas fa-sun mr-2"></i>
         <span>Rivi Bala Savi</span>
     </a>
 </li>
 <li class="mb-2">
-    <a href="{{ route('view.show', 'Diri-Saviya') }}" class="flex items-center">
+    <a href="{{ route('loan.view', ['scheme' => 'Diri-Saviya', 'view' => 'main']) }}" class="flex items-center">
         <i class="fas fa-bolt mr-2"></i>
         <span>Diri Saviya</span>
     </a>
 </li>
 <li class="mb-2">
-    <a href="{{ route('view.show', 'Madya-Aruna') }}" class="flex items-center">
+    <a href="{{ route('loan.view', ['scheme' => 'Madya-Aruna', 'view' => 'main']) }}" class="flex items-center">
         <i class="fas fa-star mr-2"></i>
         <span>Madya Aruna</span>
     </a>
 </li>
 <li class="mb-2">
-    <a href="{{ route('view.show', 'Green-Loan') }}" class="flex items-center">
+    <a href="{{ route('loan.view', ['scheme' => 'Green-Loan', 'view' => 'main']) }}" class="flex items-center">
         <i class="fas fa-hand-holding-water mr-2"></i>
         <span>Green Loan</span>
     </a>
 </li>
 <li class="mb-2">
-    <a href="{{ route('view.show', 'Home-Sweet-Home') }}" class="flex items-center">
+    <a href="{{ route('loan.view', ['scheme' => 'Home-Sweet-Home', 'view' => 'main']) }}" class="flex items-center">
         <i class="fas fa-building mr-2"></i>
         <span>Home Sweet Home</span>
     </a>
 </li>
 <li class="mb-2">
-    <a href="{{ route('view.show', 'Sihina-Maligaya') }}" class="flex items-center">
+    <a href="{{ route('loan.view', ['scheme' => 'Sihina-Maligaya', 'view' => 'main']) }}" class="flex items-center">
         <i class="fas fa-house-user mr-2"></i>
         <span>Sihina Maligaya</span>
     </a>
 </li>
 <li class="mb-2">
-    <a href="{{ route('view.show', 'Rekawaranaya') }}" class="flex items-center">
+    <a href="{{ route('loan.view', ['scheme' => 'Rekawaranaya', 'view' => 'main']) }}" class="flex items-center">
         <i class="fas fa-wheelchair mr-2"></i>
         <span>Rekawaranaya</span>
     </a>
 </li>
 <li class="mb-2">
-    <a href="{{ route('view.show', 'Mini-Taxi') }}" class="flex items-center">
+    <a href="{{ route('loan.view', ['scheme' => 'Mini-Taxi', 'view' => 'main']) }}" class="flex items-center">
         <i class="fas fa-taxi mr-2"></i>
         <span>Mini Taxi</span>
     </a>
 </li>
 <li class="mb-2">
-    <a href="{{ route('view.show', 'Sigithi-Pasala') }}" class="flex items-center">
+    <a href="{{ route('loan.view', ['scheme' => 'Sigithi-Pasala', 'view' => 'main']) }}" class="flex items-center">
         <i class="fas fa-school mr-2"></i>
         <span>Sigithi Pasala</span>
-    </a>
+</a>
+
 </li>
 <li class="mb-2">
-    <a href="{{ route('view.show', 'Working-Capital') }}" class="flex items-center">
+    <a href="{{ route('loan.view', ['scheme' => 'Working-Capital', 'view' => 'main']) }}" class="flex items-center">
         <i class="fas fa-users mr-2"></i>
         <span>Working Capital</span>
     </a>
 </li>
 <li class="mb-2">
-    <a href="{{ route('view.show', 'City-Ride') }}" class="flex items-center">
+    <a href="{{ route('loan.view', ['scheme' => 'City-Ride', 'view' => 'main']) }}" class="flex items-center">
         <i class="fas fa-road mr-2"></i>
         <span>City Ride</span>
     </a>
 </li>
 <li class="mb-2">
-    <a href="{{ route('view.show', 'My-Future') }}" class="flex items-center">
+    <a href="{{ route('loan.view', ['scheme' => 'My-Future', 'view' => 'main']) }}" class="flex items-center">
         <i class="fas fa-graduation-cap mr-2"></i>
-        <span>
-            My Future
-        </span>
+        <span>My Future</span>
     </a>
-    </li>
-    <li class="mb-2">
-    <a href="{{ route('view.show', 'Security') }}" class="flex items-center">
+</li>
+<li class="mb-2">
+    <a href="{{ route('loan.view', ['scheme' => 'Security', 'view' => 'main']) }}" class="flex items-center">
         <i class="fas fa-shield-alt mr-2"></i>
         <span>Security</span>
     </a>
 </li>
+
             </ul>
         </div>
         <div class="py-4 px-6">
