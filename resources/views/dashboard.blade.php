@@ -1,133 +1,136 @@
 <x-app-layout>
     <div class="flex h-screen">
         <!-- Sidebar -->
-        <div class="bg-gray-800 text-white w-64 flex-shrink-0">
-        <div class="h-full flex flex-col justify-between">
+<div class="bg-gray-800 text-white w-64 flex-shrink-0">
+    <div class="h-full flex flex-col justify-between">
         <div class="py-4 px-6">
             <!-- Sidebar content goes here -->
             <h2 class="text-2xl font-bold mb-4">Sidebar</h2>
             <ul>
-                <li class="mb-2">
-                    <a href="{{ route('L01.index') }}" class="flex items-center">
-                        <i class="fas fa-folder mr-2"></i>
-                        <span>General</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="{{ route('L02.index') }}" class="flex items-center">
-                        <i class="fas fa-home mr-2"></i>
-                        <span>Sonduru Piyasa</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="{{ route('L03.index') }}" class="flex items-center">
-                        <i class="fas fa-leaf mr-2"></i>
-                        <span>Govi Navoda</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="{{ route('L04.index') }}" class="flex items-center">
-                        <i class="fas fa-truck mr-2"></i>
-                        <span>Riya Shakthi</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="{{ route('L05.index') }}" class="flex items-center">
-                        <i class="fas fa-seedling mr-2"></i>
-                        <span>Ran Aswenna</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="{{ route('L06.index') }}" class="flex items-center">
-                        <i class="fas fa-globe mr-2"></i>
-                        <span>Jaya Isura</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="{{ route('L07.index') }}" class="flex items-center">
-                        <i class="fas fa-sun mr-2"></i>
-                        <span>Rivi Bala Savi</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="{{ route('L08.index') }}" class="flex items-center">
-                        <i class="fas fa-bolt mr-2"></i>
-                        <span>Diri Saviya</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="{{ route('L09.index') }}" class="flex items-center">
-                        <i class="fas fa-star mr-2"></i>
-                        <span>Madya Aruna</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="{{ route('L10.index') }}" class="flex items-center">
-                        <i class="fas fa-hand-holding-water mr-2"></i>
-                        <span>Green Loan</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="{{ route('L11.index') }}" class="flex items-center">
-                        <i class="fas fa-building mr-2"></i>
-                        <span>Home Sweet Home</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="{{ route('L12.index') }}" class="flex items-center">
-                        <i class="fas fa-house-user mr-2"></i>
-                        <span>Sihina Maligaya</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="{{ route('L13.index') }}" class="flex items-center">
-                        <i class="fas fa-wheelchair mr-2"></i>
-                        <span>Rekawaranaya</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="{{ route('L14.index') }}" class="flex items-center">
-                        <i class="fas fa-taxi mr-2"></i>
-                        <span>Mini Taxi</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="{{ route('L15.index') }}" class="flex items-center">
-                        <i class="fas fa-school mr-2"></i>
-                        <span>Sigithi Pasala</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="{{ route('L16.index') }}" class="flex items-center">
-                        <i class="fas fa-users mr-2"></i>
-                        <span>Working Capital</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="{{ route('L17.index') }}" class="flex items-center">
-                        <i class="fas fa-road mr-2"></i>
-                        <span>City Ride</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="{{ route('L18.index') }}" class="flex items-center">
-                        <i class="fas fa-graduation-cap mr-2"></i>
-                        <span>My Future</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="{{ route('security.index') }}" class="flex items-center">
-                        <i class="fas fa-shield-alt mr-2"></i>
-                        <span>Security</span>
-                    </a>
-                </li>
+            <li class="mb-2">
+    <a href="{{ route('loan.view', ['scheme' => 'General', 'view' => 'main']) }}" class="flex items-center">
+        <i class="fas fa-folder mr-2"></i>
+        <span>General</span>
+    </a>
+</li>
+<li class="mb-2">
+<a href="{{ route('loan.view', ['scheme' => 'Sonduru-Piyasa', 'view' => 'main']) }}" class="flex items-center">
+        <i class="fas fa-home mr-2"></i>
+        <span>Sonduru Piyasa</span>
+    </a>
+</li>
+<li class="mb-2">
+    <a href="{{ route('view.show', 'Govi-Navoda') }}" class="flex items-center">
+        <i class="fas fa-leaf mr-2"></i>
+        <span>Govi Navoda</span>
+    </a>
+</li>
+<li class="mb-2">
+    <a href="{{ route('view.show', 'Riya-Shakthi') }}" class="flex items-center">
+        <i class="fas fa-truck mr-2"></i>
+        <span>Riya Shakthi</span>
+    </a>
+</li>
+<li class="mb-2">
+    <a href="{{ route('view.show', 'Ran-Aswenna') }}" class="flex items-center">
+        <i class="fas fa-seedling mr-2"></i>
+        <span>Ran Aswenna</span>
+    </a>
+</li>
+<li class="mb-2">
+    <a href="{{ route('view.show', 'Jaya-Isura') }}" class="flex items-center">
+        <i class="fas fa-globe mr-2"></i>
+        <span>Jaya Isura</span>
+    </a>
+</li>
+<li class="mb-2">
+    <a href="{{ route('view.show', 'Rivi-Bala-Savi') }}" class="flex items-center">
+        <i class="fas fa-sun mr-2"></i>
+        <span>Rivi Bala Savi</span>
+    </a>
+</li>
+<li class="mb-2">
+    <a href="{{ route('view.show', 'Diri-Saviya') }}" class="flex items-center">
+        <i class="fas fa-bolt mr-2"></i>
+        <span>Diri Saviya</span>
+    </a>
+</li>
+<li class="mb-2">
+    <a href="{{ route('view.show', 'Madya-Aruna') }}" class="flex items-center">
+        <i class="fas fa-star mr-2"></i>
+        <span>Madya Aruna</span>
+    </a>
+</li>
+<li class="mb-2">
+    <a href="{{ route('view.show', 'Green-Loan') }}" class="flex items-center">
+        <i class="fas fa-hand-holding-water mr-2"></i>
+        <span>Green Loan</span>
+    </a>
+</li>
+<li class="mb-2">
+    <a href="{{ route('view.show', 'Home-Sweet-Home') }}" class="flex items-center">
+        <i class="fas fa-building mr-2"></i>
+        <span>Home Sweet Home</span>
+    </a>
+</li>
+<li class="mb-2">
+    <a href="{{ route('view.show', 'Sihina-Maligaya') }}" class="flex items-center">
+        <i class="fas fa-house-user mr-2"></i>
+        <span>Sihina Maligaya</span>
+    </a>
+</li>
+<li class="mb-2">
+    <a href="{{ route('view.show', 'Rekawaranaya') }}" class="flex items-center">
+        <i class="fas fa-wheelchair mr-2"></i>
+        <span>Rekawaranaya</span>
+    </a>
+</li>
+<li class="mb-2">
+    <a href="{{ route('view.show', 'Mini-Taxi') }}" class="flex items-center">
+        <i class="fas fa-taxi mr-2"></i>
+        <span>Mini Taxi</span>
+    </a>
+</li>
+<li class="mb-2">
+    <a href="{{ route('view.show', 'Sigithi-Pasala') }}" class="flex items-center">
+        <i class="fas fa-school mr-2"></i>
+        <span>Sigithi Pasala</span>
+    </a>
+</li>
+<li class="mb-2">
+    <a href="{{ route('view.show', 'Working-Capital') }}" class="flex items-center">
+        <i class="fas fa-users mr-2"></i>
+        <span>Working Capital</span>
+    </a>
+</li>
+<li class="mb-2">
+    <a href="{{ route('view.show', 'City-Ride') }}" class="flex items-center">
+        <i class="fas fa-road mr-2"></i>
+        <span>City Ride</span>
+    </a>
+</li>
+<li class="mb-2">
+    <a href="{{ route('view.show', 'My-Future') }}" class="flex items-center">
+        <i class="fas fa-graduation-cap mr-2"></i>
+        <span>
+            My Future
+        </span>
+    </a>
+    </li>
+    <li class="mb-2">
+    <a href="{{ route('view.show', 'Security') }}" class="flex items-center">
+        <i class="fas fa-shield-alt mr-2"></i>
+        <span>Security</span>
+    </a>
+</li>
             </ul>
         </div>
         <div class="py-4 px-6">
             <!-- Additional sidebar content if needed -->
         </div>
-        </div>
-        </div>
+    </div>
+</div>
+
         <!-- Content area -->
         <div class="flex-1 bg-gray-100">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
