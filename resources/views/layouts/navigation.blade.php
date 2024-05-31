@@ -25,13 +25,13 @@
 
                         <!-- Display links based on loan scheme -->
                         @if ($loanScheme === 'General')
-                            <x-nav-link :href="route('loan.view', ['scheme' => 'General', 'view' => 'Main'])" :active="request()->routeIs('General.*')">
-                                {{ __('General Main') }}
+                            <x-nav-link :href="route('loan.view', ['scheme' => 'General', 'view' => 'main'])" :active="request()->routeIs('General.*')">
+                                {{ __('General') }}
                             </x-nav-link>
-                            <x-nav-link :href="route('loan.view', ['scheme' => 'General', 'view' => 'Section1'])" :active="request()->routeIs('General.*')">
+                            <x-nav-link :href="route('loan.view', ['scheme' => 'General', 'view' => 'section1'])" :active="request()->routeIs('General.*')">
                                 {{ __('Section 1') }}
                             </x-nav-link>
-                            <x-nav-link :href="route('loan.view', ['scheme' => 'General', 'view' => 'Section2'])" :active="request()->routeIs('General.*')">
+                            <x-nav-link :href="route('loan.view', ['scheme' => 'General', 'view' => 'section2'])" :active="request()->routeIs('General.*')">
                                 {{ __('Section 2') }}
                             </x-nav-link>
                         @elseif ($loanScheme === 'Sonduru-Piyasa')
