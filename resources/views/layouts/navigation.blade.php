@@ -24,28 +24,8 @@
                         </x-nav-link>
 
                         <!-- Display links based on loan scheme -->
-                        @if ($loanScheme === 'General')
-                            <x-nav-link :href="route('loan.view', ['scheme' => 'General', 'view' => 'main'])" :active="request()->routeIs('General.*')">
-                                {{ __('General') }}
-                            </x-nav-link>
-                            <x-nav-link :href="route('loan.view', ['scheme' => 'General', 'view' => 'section1'])" :active="request()->routeIs('General.*')">
-                                {{ __('Section 1') }}
-                            </x-nav-link>
-                            <x-nav-link :href="route('loan.view', ['scheme' => 'General', 'view' => 'section2'])" :active="request()->routeIs('General.*')">
-                                {{ __('Section 2') }}
-                            </x-nav-link>
-                        @elseif ($loanScheme === 'Sonduru-Piyasa')
-                            <x-nav-link :href="route('loan.view', ['scheme' => 'L02', 'view' => 'Sonduru-Piyasa'])" :active="request()->routeIs('L02.*')">
-                                {{ __('L02 Sonduru Piyasa') }}
-                            </x-nav-link>
-                            <x-nav-link :href="route('loan.view', ['scheme' => 'L02', 'view' => 'Section 1'])" :active="request()->routeIs('L02.*')">
-                                {{ __('L02 Section 1') }}
-                            </x-nav-link>
-                            <x-nav-link :href="route('loan.view', ['scheme' => 'L02', 'view' => 'Section 2'])" :active="request()->routeIs('L02.*')">
-                                {{ __('L02 Section 2') }}
-                            </x-nav-link>
-                        @endif
-                    @endauth
+                        <x-loan-nav-links :currentScheme="$loanScheme" />
+                        @endauth
                 </div>
             </div>
 
@@ -108,27 +88,8 @@
                 </x-responsive-nav-link>
 
                 <!-- Display links based on loan scheme -->
-                @if ($loanScheme === 'General')
-                    <x-responsive-nav-link :href="route('loan.view', ['scheme' => 'General', 'view' => 'Main'])" :active="request()->routeIs('General.*')">
-                        {{ __('General') }}
-                    </x-responsive-nav-link>
-                    <x-responsive-nav-link :href="route('loan.view', ['scheme' => 'General', 'view' => 'Section1'])" :active="request()->routeIs('General.*')">
-                        {{ __('Section 1') }}
-                    </x-responsive-nav-link>
-                    <x-responsive-nav-link :href="route('loan.view', ['scheme' => 'General', 'view' => 'Section2'])" :active="request()->routeIs('General.*')">
-                        {{ __('Section 2') }}
-                    </x-responsive-nav-link>
-                @elseif ($loanScheme === 'L02')
-                    <x-responsive-nav-link :href="route('loan.view', ['scheme' => 'L02', 'view' => 'Sonduru-Piyasa'])" :active="request()->routeIs('L02.*')">
-                        {{ __('L02 Sonduru Piyasa') }}
-                    </x-responsive-nav-link>
-                    <x-responsive-nav-link :href="route('loan.view', ['scheme' => 'L02', 'view' => 'Section 1'])" :active="request()->routeIs('L02.*')">
-                        {{ __('L02 Section 1') }}
-                    </x-responsive-nav-link>
-                    <x-responsive-nav-link :href="route('loan.view', ['scheme' => 'L02', 'view' => 'Section 2'])" :active="request()->routeIs('L02.*')">
-                        {{ __('L02 Section 2') }}
-                    </x-responsive-nav-link>
-                @endif
+                <x-responsive-loan-nav-links :currentScheme="$loanScheme" />
+
             @endauth
         </div>
 
