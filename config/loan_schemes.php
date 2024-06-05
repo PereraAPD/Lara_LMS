@@ -3,60 +3,66 @@
 return [
     'General' => [
         ['name' => 'General', 'slug' => 'main'],
-        ['name' => 'Section 1', 'slug' => 'section1'],
-        ['name' => 'Section 2', 'slug' => 'section2'],
+        ['name' => 'Period Assign', 'slug' => 'period-assign'],
+        ['name' => 'Common Reference', 'slug' => 'common-reference'],
+        ['name' => 'Search', 'slug' => 'search'],
+        ['name' => 'Report', 'slug' => 'report'],
+        ['name' => 'Loan Disbursement', 'slug' => 'loan-disbursement'],
+        // ['name' => 'Loan Disbursement Monthly', 'slug' => 'monthly-disbursement'],
+        // ['name' => 'Loan Disbursement Semi Annual', 'slug' => 'semi-annual-disbursement'],
+        ['name' => 'Database Maintenance', 'slug' => 'db-maintenance'],
     ],
-    'Sonduru Piyasa' => [
+    'Sonduru-Piyasa' => [
         ['name' => 'Sonduru Piyasa', 'slug' => 'main'],
         ['name' => 'Section 1', 'slug' => 'section1'],
         ['name' => 'Section 2', 'slug' => 'section2'],
     ],
-    'Govi Navoda' => [
+    'Govi-Navoda' => [
         ['name' => 'Govi Navoda', 'slug' => 'main'],
         ['name' => 'Section 1', 'slug' => 'section1'],
         ['name' => 'Section 2', 'slug' => 'section2'],
     ],
-    'Riya Shakthi' => [
+    'Riya-Shakthi' => [
         ['name' => 'Riya Shakthi', 'slug' => 'main'],
         ['name' => 'Section 1', 'slug' => 'section1'],
         ['name' => 'Section 2', 'slug' => 'section2'],
     ],
-    'Ran Aswenna' => [
+    'Ran-Aswenna' => [
         ['name' => 'Ran Aswenna', 'slug' => 'main'],
         ['name' => 'Section 1', 'slug' => 'section1'],
         ['name' => 'Section 2', 'slug' => 'section2'],
     ],
-    'Jaya Isura' => [
+    'Jaya-Isura' => [
         ['name' => 'Jaya Isura', 'slug' => 'main'],
         ['name' => 'Section 1', 'slug' => 'section1'],
         ['name' => 'Section 2', 'slug' => 'section2'],
     ],
-    'Rivi Bala Savi' => [
+    'Rivi-Bala Savi' => [
         ['name' => 'Rivi Bala Savi', 'slug' => 'main'],
         ['name' => 'Section 1', 'slug' => 'section1'],
         ['name' => 'Section 2', 'slug' => 'section2'],
     ],
-    'Diri Saviya' => [
+    'Diri-Saviya' => [
         ['name' => 'Diri Saviya', 'slug' => 'main'],
         ['name' => 'Section 1', 'slug' => 'section1'],
         ['name' => 'Section 2', 'slug' => 'section2'],
     ],
-    'Madya Aruna' => [
+    'Madya-Aruna' => [
         ['name' => 'Madya Aruna', 'slug' => 'main'],
         ['name' => 'Section 1', 'slug' => 'section1'],
         ['name' => 'Section 2', 'slug' => 'section2'],
     ],
-    'Green Loan' => [
+    'Green-Loan' => [
         ['name' => 'Green Loan', 'slug' => 'main'],
         ['name' => 'Section 1', 'slug' => 'section1'],
         ['name' => 'Section 2', 'slug' => 'section2'],
     ],
-    'Home Sweet Home' => [
+    'Home-Sweet-Home' => [
         ['name' => 'Home Sweet Home', 'slug' => 'main'],
         ['name' => 'Section 1', 'slug' => 'section1'],
         ['name' => 'Section 2', 'slug' => 'section2'],
     ],
-    'Sihina Maligaya' => [
+    'Sihina-Maligaya' => [
         ['name' => 'Sihina Maligaya', 'slug' => 'main'],
         ['name' => 'Section 1', 'slug' => 'section1'],
         ['name' => 'Section 2', 'slug' => 'section2'],
@@ -66,27 +72,27 @@ return [
         ['name' => 'Section 1', 'slug' => 'section1'],
         ['name' => 'Section 2', 'slug' => 'section2'],
     ],
-    'Mini Taxi' => [
+    'Mini-Taxi' => [
         ['name' => 'Mini Taxi', 'slug' => 'main'],
         ['name' => 'Section 1', 'slug' => 'section1'],
         ['name' => 'Section 2', 'slug' => 'section2'],
     ],
-    'Sigithi Pasala' => [
+    'Sigithi-Pasala' => [
         ['name' => 'Sigithi Pasala', 'slug' => 'main'],
         ['name' => 'Section 1', 'slug' => 'section1'],
         ['name' => 'Section 2', 'slug' => 'section2'],
     ],
-    'Working Capital' => [
+    'Working-Capital' => [
         ['name' => 'Working Capital', 'slug' => 'main'],
         ['name' => 'Section 1', 'slug' => 'section1'],
         ['name' => 'Section 2', 'slug' => 'section2'],
     ],
-    'City Ride' => [
+    'City-Ride' => [
         ['name' => 'City Ride', 'slug' => 'main'],
         ['name' => 'Section 1', 'slug' => 'section1'],
         ['name' => 'Section 2', 'slug' => 'section2'],
     ],
-    'My Future' => [
+    'My-Future' => [
         ['name' => 'My Future', 'slug' => 'main'],
         ['name' => 'Section 1', 'slug' => 'section1'],
         ['name' => 'Section 2', 'slug' => 'section2'],
