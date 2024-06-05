@@ -49,7 +49,7 @@ return [
         ['name' => 'Reference', 'slug' => 'reference'],
     
     ],
-    'Rivi-Bala Savi' => [
+    'Rivi-Bala-Savi' => [
         ['name' => 'Rivi Bala Savi', 'slug' => 'main'],
         ['name' => 'Approve', 'slug' => 'approve'],
         ['name' => 'Reference', 'slug' => 'reference'],
