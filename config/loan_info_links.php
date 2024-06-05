@@ -20,8 +20,16 @@ return [
         // Add more quick links as needed
     ],
 ],
-    'other_scheme' => [
-        // Instructions and quick links for other schemes
+    'sonduru-piyasa' => [
+        'instructions' => [
+            'Period Assign' => 'Assign periods for loan schemes, allowing users to specify the duration of loan availability.',
+            // Add more instructions as needed
+        ],
+        'quick_links' => [
+            'Profile Settings' => 'profile.edit',
+            'Logout' => 'logout',
+            // Add more quick links as needed
+        ],
     ],
     // Define data for other loan schemes as needed
 ];
