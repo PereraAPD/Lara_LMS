@@ -4,7 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\LoanController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-
+use App\Http\Controllers\PeriodAssignmentController;
 // Home route
 Route::get('/', function () {
     if (auth()->check()) {
@@ -51,3 +51,8 @@ Route::get('/{scheme}/{view}', function ($scheme, $view) {
     }
     return app(LoanController::class)->showLoanView($scheme, $view);
 })->name('loan.view');
+
+// Period Assignment routes
+
+Route::get('/period-assign', [PeriodAssignmentController::class, 'index'])->name('periodAssign');
+Route::post('/process-period-assignment', [PeriodAssignmentController::class, 'process'])->name('processPeriodAssignment');
