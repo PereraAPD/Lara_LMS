@@ -24,6 +24,7 @@ return [
         ['name' => 'Approve', 'slug' => 'approve'],
         ['name' => 'Reference', 'slug' => 'reference'],
         ['name' => 'Registration', 'slug' => 'registration'],
+        ['name' => 'Daily Uploading Report', 'slug' => 'daily-uploading-report'],
    
     ],
     'Riya-Shakthi' => [
