@@ -12,7 +12,30 @@
                     @include('loans.general.partials.search-form')
                 </div>
             </div>
-            <!-- Add more sections or content as needed -->
+
+            <!-- Your Table -->
+            @include('loans.general.partials.search-results-table')
         </div>
     </div>
 </x-app-layout>
+
+<script>
+function printRecords() {
+    // Fetch the content of the table
+    var tableContent = document.querySelector('.table-container').outerHTML;
+
+    // Create a new window for printing
+    var printWindow = window.open('', '_blank');
+
+    // Set the content of the new window to be the table content
+    printWindow.document.write('<html><head><title>Print Records</title></head><body>');
+    printWindow.document.write(tableContent);
+    printWindow.document.write('</body></html>');
+
+    // Close the document for printing
+    printWindow.document.close();
+
+    // Trigger the print function
+    printWindow.print();
+}
+</script>
