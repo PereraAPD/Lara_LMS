@@ -6,7 +6,7 @@ return [
         ['name' => 'Period Assign', 'slug' => 'period-assign'],
         ['name' => 'Common Reference', 'slug' => 'common-reference'],
         ['name' => 'Search', 'slug' => 'search'],
-        ['name' => 'Report', 'slug' => 'report'],
+        ['name' => 'Reports', 'slug' => 'reports'],
         ['name' => 'Loan Disbursement', 'slug' => 'loan-disbursement'],
         // ['name' => 'Loan Disbursement Monthly', 'slug' => 'monthly-disbursement'],
         // ['name' => 'Loan Disbursement Semi Annual', 'slug' => 'semi-annual-disbursement'],

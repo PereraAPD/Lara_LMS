@@ -107,6 +107,21 @@
     buttonUrl="button-url"
     buttonText="Learn More"
 />
+<!--Time Date Card-->
+<div class="bg-white dark:bg-gray-900 shadow-lg rounded-lg overflow-hidden">
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Stats</h3>
+                    <hr class="my-4 border-t border-gray-200 dark:border-gray-700">
+                    <p class="text-gray-600">Logged in since: <span class="font-semibold">June 11, 2024 10:30 AM</span></p>
+        <p class="text-gray-600">Current time: <span class="font-semibold" id="current-time"></span></p>
+        <p class="text-gray-600">Today's Date: <span class="font-semibold">{{ \Carbon\Carbon::now()->toFormattedDateString() }}</span></p>
+                </div>
+            </div>
+            <!-- calendar component-->
+            <div class="container mx-auto px-4 py-8">
+        <!-- Include the calendar component -->
+        <x-calendar-component />
+    </div>
             <!-- Ministry of Finance card -->
             <div class="bg-white dark:bg-gray-900 shadow-lg rounded-lg overflow-hidden">
                 <div class="p-6">

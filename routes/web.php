@@ -5,6 +5,7 @@ use App\Http\Controllers\LoanController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\PeriodAssignmentController;
+
 // Home route
 Route::get('/', function () {
     if (auth()->check()) {
@@ -36,23 +37,28 @@ Route::post('/logout', function () {
 require __DIR__.'/auth.php';
 
 // Conditional wildcard routes
-Route::get('/{view}', function ($view) {
-    $excludedRoutes = ['login', 'register', 'dashboard', 'profile', 'logout'];
-    if (in_array($view, $excludedRoutes)) {
-        abort(404);
-    }
-    return app(LoanController::class)->showView($view);
-})->name('view.show');
+Route::middleware('auth')->group(function () {
+    Route::get('/{view}', function ($view) {
+        $excludedRoutes = ['login', 'register', 'dashboard', 'profile', 'logout'];
+        if (in_array($view, $excludedRoutes)) {
+            abort(404);
+        }
+        return app(LoanController::class)->showView($view);
+    })->name('view.show');
 
-Route::get('/{scheme}/{view}', function ($scheme, $view) {
-    $excludedRoutes = ['login', 'register', 'dashboard', 'profile', 'logout'];
-    if (in_array($scheme, $excludedRoutes) || in_array($view, $excludedRoutes)) {
-        abort(404);
-    }
-    return app(LoanController::class)->showLoanView($scheme, $view);
-})->name('loan.view');
+    Route::get('/{scheme}/{view}', function ($scheme, $view) {
+        $excludedRoutes = ['login', 'register', 'dashboard', 'profile', 'logout'];
+        if (in_array($scheme, $excludedRoutes) || in_array($view, $excludedRoutes)) {
+            abort(404);
+        }
+        return app(LoanController::class)->showLoanView($scheme, $view);
+    })->name('loan.view');
+
+    Route::get('/loan/{scheme}/{view}/{subview}', [LoanController::class, 'showSubLoanView'])->name('loan.subview');
+});
 
 // Period Assignment routes
-
-Route::get('/period-assign', [PeriodAssignmentController::class, 'index'])->name('periodAssign');
-Route::post('/process-period-assignment', [PeriodAssignmentController::class, 'process'])->name('processPeriodAssignment');
+Route::middleware('auth')->group(function () {
+    Route::get('/period-assign', [PeriodAssignmentController::class, 'index'])->name('periodAssign');
+    Route::post('/process-period-assignment', [PeriodAssignmentController::class, 'process'])->name('processPeriodAssignment');
+});
