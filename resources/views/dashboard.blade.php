@@ -1,9 +1,4 @@
 <x-app-layout>
-<x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('dashboard') }}
-        </h2>
-    </x-slot>
     <div class="flex h-screen">
         <!-- Sidebar -->
 <div class="bg-gray-900 text-white h-full w-52 flex flex-col">
@@ -83,10 +78,6 @@
 <a href="{{ route('loan.view', ['scheme' => 'My-Future', 'view' => 'main']) }}" class="flex items-center px-6 py-2 text-sm font-medium hover:bg-gray-700 transition duration-300 ease-in-out">
     <i class="fas fa-graduation-cap mr-2"></i>
     My Future
-</a>
-<a href="{{ route('loan.view', ['scheme' => 'Security', 'view' => 'main']) }}" class="flex items-center px-6 py-2 text-sm font-medium hover:bg-gray-700 transition duration-300 ease-in-out">
-    <i class="fas fa-shield-alt mr-2"></i>
-    Security
 </a>
 <!-- Add more navigation links as needed -->
             </nav>
