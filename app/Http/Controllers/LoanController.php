@@ -27,4 +27,13 @@ class LoanController extends Controller
         // If the view does not exist, show a 404 error
         abort(404);
     }
+    public function showSubLoanView($scheme, $view, $subview)
+    {
+        $subViewPath = "loans.$scheme.$view.$subview";
+        if (View::exists($subViewPath)) {
+            return view($subViewPath);
+        }
+        // If the view does not exist, show a 404 error
+        abort(404);
+    }
 }
