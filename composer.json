@@ -1,8 +1,8 @@
 {
-    "name": "laravel/laravel",
+    "name": "dfd/esllms",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "The Web application for the Enterprise Sri Lanka Programme.",
+    "keywords": ["ESL", "LMS"],
     "license": "MIT",
     "require": {
         "php": "^8.2",
